@@ -1,0 +1,47 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+### Above combination will ignore all files without extension ###
+
+/build
+/lib
+
+/Examples_old/ROS/ORB_SLAM3/build
+
+/Thirdparty/DBoW2/build
+/Thirdparty/DBoW2/lib
+
+/Thirdparty/g2o/build
+/Thirdparty/g2o/lib
+/Thirdparty/g2o/config.h
+
+/Thirdparty/Sophus/build
+
+/Vocabulary/ORBvoc.txt
+
+KeyFrameTrajectory.txt
+CameraTrajectory.txt
+kf_*.txt
+f_*.txt
+ExecMean.txt
+SessionInfo.txt
+Results_Euroc.txt
+LBA_Stats.txt
+LocalMapTimeStats.txt
+TrackLocalMapStats.txt
+TrackingTimeStats.txt
+time*
+Time*
+Table_Euroc
+Table_TUMVI_rooms/
+*.pyc
+*.osa
+.idea/
+borrar/*
+*/ExecMean.txt

@@ -110,9 +110,9 @@ int main(int argc, char **argv)
   shift = fsSettings["IMU.shift"];
 
   // Maximum delay, 5 seconds
-  ros::Subscriber sub_imu = n.subscribe("/imu", 1000, &ImuGrabber::GrabImu, &imugb); 
-  ros::Subscriber sub_img_rgb = n.subscribe("/rgb/image_raw", 100, &ImageGrabber::GrabImageRgb,&igb);
-  ros::Subscriber sub_img_depth = n.subscribe("/depth_to_rgb/image_raw", 100, &ImageGrabber::GrabImageDepth,&igb);
+  ros::Subscriber sub_imu = n.subscribe("/camera/imu", 1000, &ImuGrabber::GrabImu, &imugb); 
+  ros::Subscriber sub_img_rgb = n.subscribe("/camera/color/image_raw", 100, &ImageGrabber::GrabImageRgb,&igb);
+  ros::Subscriber sub_img_depth = n.subscribe("/camera/depth/image_rect_raw", 100, &ImageGrabber::GrabImageDepth,&igb);
 
   std::thread sync_thread(&ImageGrabber::SyncWithImu,&igb);
 

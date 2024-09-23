@@ -37,6 +37,7 @@ mkdir build
 cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 make -j
+sudo make install
 
 echo "Building Sophus completed."
 echo "Press [Enter] key to continue..."

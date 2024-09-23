@@ -24,4 +24,4 @@ cmake --build build -t pypangolin_pip_install
 # cd build
 # ctest
 
-cmake --install build
+sudo cmake --install build
